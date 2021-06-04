@@ -1,0 +1,23 @@
+#login{
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      align-items: center;
+      margin-top: 28vh;
+
+      form{
+        width: 23%;
+
+        .login-actions{
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      .invalid-feedback-ok{
+        display: block!important;
+      }
+
+
+
+}
