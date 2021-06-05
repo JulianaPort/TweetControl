@@ -25,12 +25,11 @@ Você pode saber mais sobre lendo a própria documentando do [Node.js](https://n
 src\
  |--config\         # Configurações das variaveis e funcionamento dos pacotes instalados;
  |--controllers\    # Controle das rotas
- |--docs\           # Swagger 
  |--middlewares\    # Middlewares personalizados
  |--models\         # Classes dos objetos
  |--routes\         # Routas do express
  |--services\       # Logica de negocio
- |--utils\          # Classes utilitárias para todo o preojeto
+ |--utils\          # Classes utilitárias para todo o projeto
  |--validations\    # Validações das classes
  |--app.js          # App do Express
  |--index.js        # Inicio do projeto
