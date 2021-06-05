@@ -6,17 +6,20 @@ Foi criado para o teste do processo seletivo da globo.
 
 > "Um diretor de TV precisa exibir em um telão, os tweets que chegam contendo uma determinada hashtag que varia diariamente. Foi pedido que esses tweets fossem inseridos no telão por um controle (sistema web) que seria comandado pelo pessoal de operações do estúdio, neste caso o mesmo deveria aprovar os tweets que estão chegando para que o mesmo seja exibido no telão."
 
+<br>
 
-<p align="center">
-    <img src="./assets/img/login.PNG" />
+
+<p align="center">    
     <img src="./assets/img/tweets.PNG" />
 </p>
 
-### Prerequisites
+<br>
 
-Node
-Angular
-Npm
+## Prerequisites
+
+* Node <br>
+* Angular <br>
+* Npm
 
 ## Rodar o projeto
 
@@ -27,10 +30,10 @@ Npm
 
 ## Outras informações
 
-* Saiba mais sobre a parte do frontend devenvolvido em angular ou sobre o backend desenvolvido em node:
+ Saiba mais sobre a parte do frontend devenvolvido em angular ou sobre o backend desenvolvido em node:
 
-[Angular](./frontend/README.md) <br />
-[Node](./backend/README.md)
+* [Angular](./frontend/README.md) <br />
+* [Node](./backend/README.md)
 
 ## Authors
 
