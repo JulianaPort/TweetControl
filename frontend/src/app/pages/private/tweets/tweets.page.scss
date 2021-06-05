@@ -74,6 +74,7 @@
                 font-weight: bold;
                 max-height: 48px;
                 overflow: hidden;
+                font-family: 'Helvetica';
             }
             .tweet-loading {
                 color: #000;
@@ -107,7 +108,7 @@
                 row-gap: 9px;
                  ::ng-deep .box {
                     margin: 0;
-                    background: rgb(31 55 231 / 81%);
+                    background: rgb(31 139 231 / 96%);
                     height: auto;
                     width: 100%;
                     row-gap: 9px;
