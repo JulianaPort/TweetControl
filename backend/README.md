@@ -1,22 +1,25 @@
-# Tweet Control - Frontend 
+# Tweet Control - Backend 
 
-## Angular 
+## Node.js 
 
-Node.js é um ambiente de execução JavaScript server-side.
+Node.js é um ambiente de execução JavaScript server-side. As vantagens do node: 
 
-Por ser um framework e estabelecer formas de programações o Angular atua sob determinados princípios:  
+* Linguagem popular: o JavaScript já está por aí desde os tempos da internet lascada, digo, discada. É possível contratar programadores com relativa facilidade.
+* JavaScript full-stack: usar a mesma linguagem no front-end e back-end é uma grande vantagem, pois os programadores não precisam trabalhar com mais de uma linguagem.
+* Leve: criar um ambiente e subir uma aplicação Node.js não exige muitos recursos computacionais como seus concorrentes. Tanto que é muito usado em microserviços e serverless (como nas skills tipo Alexa Hosted).
 
-# Markdown
+Você pode saber mais sobre lendo a própria documentando do [Node.js](https://nodejs.dev/learn).
 
-*Linguagem popular: o JavaScript já está por aí desde os tempos da internet lascada, digo, discada. É possível contratar programadores com relativa facilidade.
-*JavaScript full-stack: usar a mesma linguagem no front-end e back-end é uma grande vantagem, pois os programadores não precisam trabalhar com mais de uma linguagem.
-*Leve: criar um ambiente e subir uma aplicação Node.js não exige muitos recursos computacionais como seus concorrentes. Tanto que é muito usado em microserviços e serverless (como nas skills tipo Alexa Hosted).
-
-Você pode saber mais sobre o node lendo a própria documentando do [Node.js](https://nodejs.dev/learn);
+<br>
 
 ## Node no Tweet Control
 
-# Estrutura
+<br>
+
+### Estrutura do projeto
+
+
+
 
 ```console
 src\
@@ -32,7 +35,7 @@ src\
  |--app.js          # App do Express
  |--index.js        # Inicio do projeto
 ```
-## Rodar o projeto
+###  Rodar o projeto
 
 ```bash
  npm i 
