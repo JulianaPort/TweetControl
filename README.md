@@ -8,7 +8,7 @@ Foi criado para o teste do processo seletivo da globo.
 
 
 <p align="center">
-    <img src="../assets/img/tweets.png" />
+    <img src="./assets/img/tweets.png" />
 </p>
 
 ### Prerequisites
@@ -28,7 +28,7 @@ Npm
 
 * Saiba mais sobre a parte do frontend devenvolvido em angular ou sobre o backend desenvolvido em node:
 
-[Angular](./frontend/README.md)
+[Angular](./frontend/README.md) <br />
 [Node](./backend/README.md)
 
 ## Authors
