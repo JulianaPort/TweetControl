@@ -8,7 +8,8 @@ Foi criado para o teste do processo seletivo da globo.
 
 
 <p align="center">
-    <img src="./assets/img/tweets.png" />
+    <img src="./assets/img/login.PNG" />
+    <img src="./assets/img/tweets.PNG" />
 </p>
 
 ### Prerequisites
