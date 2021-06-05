@@ -1,0 +1,153 @@
+#tweets-page {
+    display: flex;
+    column-gap: 27px;
+    padding: 0 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    .edit-hashtag {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        width: 100%;
+        align-items: center;
+        padding: 13px;
+        row-gap: 10px;
+        padding-top: 3rem;
+        height: 18vh;
+        label {
+            margin: 0
+        }
+        input {
+            width: 34%;
+            border-radius: 3px;
+        }
+        .actions {
+            display: flex;
+            column-gap: 11px;
+        }
+    }
+    .hashtagAtual {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3rem;
+        height: 18vh;
+        .diaria {
+            display: flex;
+            column-gap: 33px;
+            align-items: center;
+            margin-left: 101px;
+            span {
+                font-size: 3rem;
+            }
+            button {
+                height: 36px;
+            }
+        }
+    }
+    input {
+        color: black;
+    }
+    >app-box {
+        flex-basis: 45%;
+    }
+    >app-box:last-of-type {
+         ::ng-deep .box {
+            border-radius: 0.5rem !important;
+        }
+    }
+     ::ng-deep .box-component {
+        position: relative;
+        .box {
+            margin: 0 auto;
+            margin-top: 12vh;
+            height: 45vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            row-gap: 23px;
+            border-radius: 0 0.5rem 0.5rem 0.5rem;
+            .real-text {
+                color: #130004;
+                font-weight: bold;
+                max-height: 48px;
+                overflow: hidden;
+            }
+            .tweet-loading {
+                color: #000;
+                height: 100%;
+                text-align: center;
+                /* vertical-align: middle; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .tabs {
+                display: flex;
+                position: absolute;
+                top: -36px;
+                left: 0;
+                div {
+                    background: #334256;
+                    color: black;
+                    padding: 6px 24px;
+                    border-radius: 0.5rem 0.5em 0 0;
+                    cursor: pointer;
+                }
+                div.active {
+                    background: #ffff;
+                }
+            }
+            .tweets {
+                color: black;
+                display: flex;
+                flex-direction: column;
+                row-gap: 9px;
+                 ::ng-deep .box {
+                    margin: 0;
+                    background: rgb(31 55 231 / 81%);
+                    height: auto;
+                    width: 100%;
+                    row-gap: 9px;
+                    border-radius: 1rem;
+                    margin-bottom: 14px;
+                    .user-profile {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 14px;
+                        img {
+                            border-radius: 22px;
+                        }
+                    }
+                    .actions {
+                        display: flex;
+                        justify-content: flex-end;
+                        column-gap: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .real-time {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .lblRealTime {
+            position: absolute;
+            top: 72px;
+            font-size: 22px;
+        }
+        .telao {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-image: url('../../../../assets/img/globo.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+}

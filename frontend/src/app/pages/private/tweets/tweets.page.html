@@ -1,0 +1,65 @@
+<div id="tweets-page">
+
+
+
+
+    <div *ngIf="editTodayHashtag" class="edit-hashtag">
+        <label>Digite abaixo a Hashtag</label>
+        <input type="text" [(ngModel)]="mostPopularHashtag" appHashtag/>
+        <div class="actions">
+            <button class="btn btn-primary" (click)="editHashtag()">Salvar</button>
+            <button class="btn btn-primary" (click)="cancel()">Cancelar</button>
+        </div>
+    </div>
+
+    <div *ngIf="!editTodayHashtag" class="hashtagAtual">
+        A Hastag diária é:
+        <div class="diaria">
+            <span>{{choosedHashtag}}</span>
+            <button class="btn btn-primary" (click)="editarHashtag()">Editar</button>
+        </div>
+
+    </div>
+
+    <ng-container *ngIf="choosedHashtag">
+        <app-box>
+            <div class="tabs">
+                <div (click)="changeTab('tabTweets')" [class.active]="tabTweets">Tweets</div>
+                <div (click)="changeTab('tabTweetsAprove')" [class.active]="!tabTweets">Tweets Aprovados</div>
+            </div>
+            <ng-container *ngIf="tabTweets">
+                <tweet-box [inpTweetlist]='tweets' (aprovedTweetChange)="aprovedTweets = $event"></tweet-box>
+
+                <div *ngIf="tweets.length == 0" class="tweet-loading">
+                    Procurando tweets com a hashtag {{mostPopularHashtag}}...
+                </div>
+            </ng-container>
+            <ng-container *ngIf="!tabTweets">
+                <tweet-box [inpTweetlist]='aprovedTweets' [inptNeedsAprove]="false"></tweet-box>
+                <div *ngIf="aprovedTweets.length == 0" class="tweet-loading">
+                    Nenhum tweet aprovado
+                </div>
+            </ng-container>
+        </app-box>
+        <app-box class="real-time">
+            <div class="lblRealTime">
+                Real Time
+            </div>
+            <div class="telao">
+                <div>
+                    <app-box *ngIf="(currentTweet$ | async) as tweet" class="tweets">
+                        <div class="user-profile">
+                            <img [src]="tweet.user.profile_image_url" />
+                            <div>
+                                @{{tweet.user.screen_name}}
+                            </div>
+                        </div>
+                        <div class="real-text">
+                            {{tweet.text}}
+                        </div>
+                    </app-box>
+                </div>
+            </div>
+        </app-box>
+    </ng-container>
+</div>

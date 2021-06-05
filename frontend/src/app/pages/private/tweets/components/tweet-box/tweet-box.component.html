@@ -1,0 +1,15 @@
+<app-box *ngFor="let tweet of tweetlist" class="tweets">
+    <div class="user-profile">
+        <img [src]="tweet.user.profile_image_url" />
+        <div>
+            @{{tweet.user.screen_name}}
+        </div>
+    </div>
+    <div class="real-text">
+        {{tweet.text}}
+    </div>
+    <div class="actions" *ngIf="inptNeedsActions">
+        <button class="btn btn-success" (click)="approveTweet(tweet)" *ngIf="inptNeedsAprove">Aprovar</button>
+        <button class="btn btn-danger" (click)="reproveTweet(tweet)">Rejeitar</button>
+    </div>
+</app-box>
