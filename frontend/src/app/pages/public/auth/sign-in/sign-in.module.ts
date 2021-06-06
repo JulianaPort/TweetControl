@@ -15,12 +15,6 @@ import { SignInPage } from './sign-in.page';
       {
         path: '',
         component: SignInPage,
-        data: {
-          title: 'Sign in to Angular Boilerplate',
-          description:
-            'Start writing your application right away without any concern on architecture matters.',
-          robots: 'index, follow',
-        },
       },
     ]),
   ],
